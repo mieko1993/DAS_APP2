@@ -1,9 +1,9 @@
 package com.team16.antenna.trend.drivingassistancesystem;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
 
 
 public class Introduction3 extends ActionBarActivity {
@@ -14,25 +14,15 @@ public class Introduction3 extends ActionBarActivity {
         setContentView(R.layout.activity_introduction3);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_introduction3, menu);
-        return true;
+    //When the Button Next is clicked
+    public void onClickButtonNext3(View view){
+        Intent intent=new Intent(Introduction3.this,Introduction4.class);
+        startActivity(intent);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+    //when BACK button is clicked
+    public void onClickButtonBack3(View view){
+        Intent i=new Intent(Introduction3.this,Introduction2.class);
+        startActivity(i);
     }
 }

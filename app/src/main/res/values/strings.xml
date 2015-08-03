@@ -12,6 +12,7 @@
     <string name="title_activity_sign_up">SignUp</string>
     <string name="title_activity_terms">Terms</string>
     <string name="title_activity_forget2">Forget your password?</string>
+    <string name="title_activity_das">Driving Assistance System</string>
 
     <!--Star Activity-->
     <string name="button_loginStart">Login</string>
@@ -63,6 +64,13 @@
     <string name="title_activity_introduction2">Introduction</string>
     <string name="title_activity_introduction3">Introduction</string>
     <string name="title_activity_introduction4">Introduction</string>
+
+<!--Introduction-->
+    <string name="button_nextIntroduction">Next</string>
+    <string name="button_backIntroduction">Back</string>
+    <string name="button_startIntroduction">Let´s Start!</string>
+
+
 
 
 

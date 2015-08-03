@@ -52,6 +52,10 @@
             android:name=".Introduction4"
             android:label="@string/title_activity_introduction4" >
         </activity>
+        <activity
+            android:name=".DAS"
+            android:label="@string/title_activity_das" >
+        </activity>
     </application>
 
 </manifest>
