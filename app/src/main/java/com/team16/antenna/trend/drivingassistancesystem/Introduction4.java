@@ -16,7 +16,7 @@ public class Introduction4 extends ActionBarActivity {
 
     //When the Button Next is clicked
     public void onClickButtonStartIntroduction(View view){
-        Intent intent=new Intent(Introduction4.this,DAS.class);
+        Intent intent=new Intent(Introduction4.this,OBD.class);
         startActivity(intent);
     }
 

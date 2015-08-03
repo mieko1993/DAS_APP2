@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
 
 
-    <!--Activities Titloes-->
+    <!--Activities Titles-->
     <string name="title_activity_introduction">Introduction</string>
     <string name="title_activity_forget">Forget your password?</string>
     <string name="title_activity_login">Login</string>
@@ -13,6 +13,8 @@
     <string name="title_activity_terms">Terms</string>
     <string name="title_activity_forget2">Forget your password?</string>
     <string name="title_activity_das">Driving Assistance System</string>
+    <string name="title_activity_obd">OBD Connection</string>
+
 
     <!--Star Activity-->
     <string name="button_loginStart">Login</string>
@@ -70,10 +72,7 @@
     <string name="button_backIntroduction">Back</string>
     <string name="button_startIntroduction">Let´s Start!</string>
 
-
-
-
-
-
+    <!---OBD Activity-->
+    <string name="button_obdConnection">Conect</string>
 
 </resources>
