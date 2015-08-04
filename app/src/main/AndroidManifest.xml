@@ -60,6 +60,42 @@
             android:name=".OBD"
             android:label="@string/title_activity_obd" >
         </activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard" >
+        </activity>
+        <activity
+            android:name=".Scan"
+            android:label="@string/title_activity_scan" >
+        </activity>
+        <activity
+            android:name=".Stadistics"
+            android:label="@string/title_activity_stadistics" >
+        </activity>
+        <activity
+            android:name=".Calendar"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        <activity
+            android:name=".Tips"
+            android:label="@string/title_activity_tips" >
+        </activity>
+        <activity
+            android:name=".Tutorials"
+            android:label="@string/title_activity_tutorials" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".Logout"
+            android:label="@string/title_activity_logout" >
+        </activity>
     </application>
 
 </manifest>
