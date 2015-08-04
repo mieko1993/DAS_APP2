@@ -67,7 +67,7 @@
     <string name="title_activity_introduction3">Introduction</string>
     <string name="title_activity_introduction4">Introduction</string>
 
-<!--Introduction-->
+    <!--Introduction-->
     <string name="button_nextIntroduction">Next</string>
     <string name="button_backIntroduction">Back</string>
     <string name="button_startIntroduction">Let´s Start!</string>
