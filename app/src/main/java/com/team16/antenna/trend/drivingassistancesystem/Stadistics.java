@@ -1,18 +1,24 @@
 package com.team16.antenna.trend.drivingassistancesystem;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
-public class Stadistics extends ActionBarActivity {
+public class Stadistics extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stadistics);
+        super.onCreateDrawer();
+        //Action bar needs to be instatiate in every Activity that has layout
+        setUpActionBar();
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,4 +41,33 @@ public class Stadistics extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    //Set up Action Bar
+    private void setUpActionBar() {
+        //Uses superclass method to instantiate ActionBar
+        mActionBarToolbar = getActionBarToolbar();
+        mActionBarToolbar.setTitle(getResources().getString(R.string.title_stadistics));
+        setSupportActionBar(mActionBarToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        //Set up Icon for the Navigation Drawer
+        mActionBarToolbar.setNavigationIcon(R.drawable.ic_drawer);
+        //Set up Action for the Navigation Drawer Icon
+        mActionBarToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(drawerList.isShown()){
+                    //Close Navigation Drawer
+                    drawerLayout.closeDrawer(Gravity.START);
+                }else {
+                    //Open Navigation Drawer
+                    drawerLayout.openDrawer(Gravity.START);
+                }
+            }
+        });
+
+    }
+
+
+
 }
